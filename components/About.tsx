@@ -26,11 +26,11 @@ function About({pageInfo}: Props) {
         opacity: 1,
         x: 0
       }}
-      className="-mb-20 md:mb-0 shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-96 xl:w-[500px] xl:h-[600px]"
+      className="-mb-28 md:mb-0 shrink-0 w-32 sm:w-40 lg:w-56 h-32 sm:h-40 lg:h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-96 xl:w-[500px] xl:h-[600px]"
       src={urlFor(pageInfo?.profilePic).url()} />
 
       <div className='space-y-10 px-0 md:px-10'>
-        <h4 className='text-3xl font-semibold'>Here is a <span className='underline decoration-[#F7AB0A]/50'>little</span> background about me!</h4>
+        <h4 className='text-2xl md:text-3xl font-semibold'>Here is a <span className='underline decoration-[#F7AB0A]/50'>little</span> background about me!</h4>
         <p className='text-sm'>{pageInfo.backgroundInformation}</p>
       </div>
     </motion.div>
